@@ -1,0 +1,50 @@
+.main-nav-bar {
+  width: 100%;
+  margin: 1.5em 0 2em 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: $header-font;
+  font-size: 1.2rem;
+  & > a {
+    text-decoration: none;
+    &:visited {
+      color: $primary;
+    }
+    &:hover {
+      color: $accent;
+    }
+  }
+  .main-nav-home {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-right: auto;
+  }
+  .main-nav-item {
+    margin-left: 1.5em;
+  }
+  .active {
+    color: $accent !important;
+    font-weight: 700;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  margin-bottom: 1.5em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  font-weight: 300;
+  a {
+    color: $accent;
+    text-decoration: none;
+    &:visited {
+      color: $accent;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
