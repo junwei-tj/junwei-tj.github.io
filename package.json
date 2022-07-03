@@ -7,7 +7,7 @@
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "sass --watch src/scss:_site/public",
-    "build:eleventy": "npx @11ty/elevent",
+    "build:eleventy": "npx @11ty/eleventy",
     "build:sass": "sass src/scss:_site/public",
     "start": "npm-run-all -p watch:*",
     "build": "npm-run-all build:*"

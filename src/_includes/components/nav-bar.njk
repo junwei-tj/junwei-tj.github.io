@@ -1,6 +1,6 @@
 <nav class="main-nav-bar">
-  <a href="" class="main-nav-home {{ 'active' if page.url == '/' }}">Jun Wei</a>
-  <a href="" class="main-nav-item">About</a>
-  <a href="" class="main-nav-item">Projects</a>
-  <a href="" class="main-nav-item">Blog</a>
+  <a href="/" class="main-nav-home {{ 'active' if page.url == '/' }}">Jun Wei</a>
+  <a href="/about/" class="main-nav-item {{ 'active' if page.url == '/about/' }}">About</a>
+  <a href="/projects/" class="main-nav-item {{ 'active' if page.url == '/projects/' }}">Projects</a>
+  <a href="/blog/" class="main-nav-item {{ 'active' if page.url == '/blog/' }}">Blog</a>
 </nav>
