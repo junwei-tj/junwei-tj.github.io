@@ -1,0 +1,24 @@
+.home {
+  @include page-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15% 15% 15%;
+  .hello {
+    font-size: 6em;
+    color: $accent;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .accent {
+    color: $accent;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  a {
+    &:link,
+    &:visited {
+      color: $primary;
+    }
+  }
+}

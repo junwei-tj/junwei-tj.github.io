@@ -8,6 +8,7 @@
   font-size: 1.2rem;
   & > a {
     text-decoration: none;
+    &:link,
     &:visited {
       color: $primary;
     }
@@ -30,8 +31,7 @@
 }
 
 .footer {
-  margin-top: auto;
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
