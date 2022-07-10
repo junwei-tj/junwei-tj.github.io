@@ -81,3 +81,8 @@
     }
   }
 }
+
+.projects {
+  @include page-content;
+  margin-top: 2em;
+}

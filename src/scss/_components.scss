@@ -48,3 +48,42 @@
     }
   }
 }
+
+.project {
+  display: flex;
+  width: 95%;
+  height: 240px;
+  margin: auto;
+  margin-bottom: 3em;
+  border-radius: 16px;
+  background-color: #fcfeff;
+  filter: drop-shadow(2px 8px 16px #d9d9d9);
+  overflow: hidden;
+  &-image {
+    height: 100%;
+    width: 30%;
+    border-right: 1px solid #d9d9d9;
+  }
+  &-details {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 1em;
+    h1 {
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .project-links {
+      margin-top: auto;
+      a {
+        margin-right: 1em;
+        &:link,
+        &:visited {
+          color: $accent;
+          font-weight: 700;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
