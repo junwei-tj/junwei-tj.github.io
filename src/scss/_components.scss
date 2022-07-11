@@ -96,20 +96,24 @@
     border-radius: 8px;
     padding: 0.5em 1em;
     margin-left: auto;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     a {
       &:link,
       &:visited {
         color: $primary;
         text-decoration: none;
-        font-weight: 700;
+        font-family: $header-font;
       }
       &:not(:last-child) {
         margin-right: 1em;
       }
+      &:hover {
+        color: $accent;
+      }
     }
     .active {
       color: $accent !important;
+      font-weight: 700;
     }
   }
 }
