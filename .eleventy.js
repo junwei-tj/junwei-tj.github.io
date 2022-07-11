@@ -3,6 +3,7 @@ const readingTime = require("eleventy-plugin-reading-time");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("page", "layouts/page.njk");
+  eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   eleventyConfig.addPlugin(syntaxHighlight);
