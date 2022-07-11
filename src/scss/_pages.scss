@@ -86,3 +86,68 @@
   @include page-content;
   margin-top: 2em;
 }
+
+.blog {
+  @include page-content;
+  .post {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 4px;
+    &:first-of-type {
+      padding-top: 0;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #b9b9b9;
+    }
+    h1 {
+      margin: 0;
+      margin-bottom: 8px;
+      a {
+        &:link,
+        &:visited {
+          color: $primary;
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    p {
+      margin: 0;
+    }
+    &-details {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+      img {
+        width: 1em;
+        height: 1em;
+      }
+      &-text {
+        font-size: 0.9em;
+        font-weight: 300;
+        margin-left: 4px;
+        margin-right: 2em;
+      }
+    }
+    &-tags {
+      margin-top: 1.5em;
+    }
+    &-tag {
+      &:link,
+      &:visited {
+        background-color: $accent;
+        border-radius: 4px;
+        color: $background;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 4px 8px;
+        margin-right: 0.5em;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
