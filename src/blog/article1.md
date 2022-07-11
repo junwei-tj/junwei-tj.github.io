@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Article 1
 date: 2022-06-10
 tags:

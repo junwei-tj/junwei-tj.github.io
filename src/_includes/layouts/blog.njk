@@ -4,23 +4,5 @@ layout: page
 
 <main class="blog">
   {% include "../components/blog-nav.njk" %}
-  {% for post in collections.blogPosts | reverse %}
-    <section class="post">
-      <h1><a href={{ post.url }}>{{ post.data.title }}</a></h1>
-      <div class="post-details">
-        <img src="/assets/date.svg" alt="Calendar icon" />
-        <span class="post-details-text">{{ post.data.date | formatDate }}</span>
-        <img src="/assets/clock.svg" alt="Clock icon" />
-        <span class="post-details-text">{{ post | readingTime }} read</span>
-      </div>
-      <p>{{ post.data.page.excerpt }}</p>
-      {% if post.data.tags %}
-        <div class="post-tags">
-          {% for tag in (post.data.tags | getTags) %}
-            <a href="/blog/tags/{{ tag }}" class="post-tag">{{ tag }}</a>
-          {% endfor %}
-        </div>
-      {% endif %}
-    </section>
-  {% endfor %}
+  {{ content | safe }}
 </main>

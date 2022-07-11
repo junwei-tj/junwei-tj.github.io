@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Article 3
 date: 2022-07-10
 ---

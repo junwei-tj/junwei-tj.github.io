@@ -9,7 +9,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
 
   eleventyConfig.addCollection("blogPosts", (collection) => {
-    return collection.getFilteredByGlob("./src/blog/*.md");
+    return collection.getFilteredByGlob("./src/blog/*.md").sort((a, b) => {
+      return b.date - a.date;
+    });
   });
 
   eleventyConfig.addFilter("formatDate", (dateObj) => {

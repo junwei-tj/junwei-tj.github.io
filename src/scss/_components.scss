@@ -113,3 +113,36 @@
     }
   }
 }
+
+.posts-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    a {
+      &:link,
+      &:visited {
+        color: $primary;
+        text-decoration: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &-header {
+      color: $accent;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    &.previous {
+      margin-right: auto;
+    }
+    &.next {
+      margin-left: auto;
+      text-align: end;
+    }
+  }
+}
