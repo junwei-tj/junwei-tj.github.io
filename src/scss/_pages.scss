@@ -89,69 +89,71 @@
 
 .blog {
   @include page-content;
-  .post-preview {
-    display: flex;
-    flex-direction: column;
-    padding: 3em 4px;
-    &:first-of-type {
-      padding-top: 0;
-    }
-    &:not(:last-child) {
-      border-bottom: 1px solid #b9b9b9;
-    }
-    p {
-      margin: 0;
-    }
+  img {
+    width: 100%;
+    height: auto;
   }
-  .post-title {
-    margin: 0;
-    margin-bottom: 8px;
-    a {
+  .post {
+    &-preview {
+      display: flex;
+      flex-direction: column;
+      padding: 3em 4px;
+      &:first-of-type {
+        padding-top: 0;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid #b9b9b9;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    &-title {
+      margin: 0;
+      margin-bottom: 8px;
+      a {
+        &:link,
+        &:visited {
+          color: $primary;
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &-details {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+      img {
+        width: 1em;
+        height: 1em;
+      }
+      &-text {
+        font-size: 0.9em;
+        font-weight: 300;
+        margin-left: 4px;
+        margin-right: 2em;
+      }
+    }
+    &-tags {
+      margin-top: 1.5em;
+    }
+    &-tag {
       &:link,
       &:visited {
-        color: $primary;
+        background-color: $accent;
+        border-radius: 4px;
+        color: $background;
+        font-weight: 700;
         text-decoration: none;
+        padding: 4px 8px;
+        margin-right: 0.5em;
       }
       &:hover {
         text-decoration: underline;
       }
     }
-  }
-  .post-details {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1em;
-    img {
-      width: 1em;
-      height: 1em;
-    }
-    &-text {
-      font-size: 0.9em;
-      font-weight: 300;
-      margin-left: 4px;
-      margin-right: 2em;
-    }
-  }
-  .post-tags {
-    margin-top: 1.5em;
-  }
-  .post-tag {
-    &:link,
-    &:visited {
-      background-color: $accent;
-      border-radius: 4px;
-      color: $background;
-      font-weight: 700;
-      text-decoration: none;
-      padding: 4px 8px;
-      margin-right: 0.5em;
-    }
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  img {
-    width: 100%;
-    height: auto;
   }
 }
