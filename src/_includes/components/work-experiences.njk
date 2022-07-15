@@ -1,6 +1,8 @@
 {% for work in workExperiences %}
 <section class="work">
-  <img class="work-logo" src={{ work.logo }} alt={{ work.logoAlt }} />
+  <div>
+    <img class="work-logo" src={{ work.logo }} alt={{ work.logoAlt }} />
+  </div>
   <div class="work-details">
     <div class="work-header">
       <h2 class="work-company">{{ work.company }}</h2>
