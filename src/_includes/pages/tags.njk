@@ -1,0 +1,21 @@
+---
+layout: blog
+---
+
+{% for tag in collections.blogTags %}
+  <section>
+    <h2 class="tag">{{ tag }}</h2>
+    <ul class="tag-post-list">
+      {% for post in collections.blogPosts %}
+        {% set tagExists = post.data.tags | hasTag(tag) %}
+        {% if tagExists %}
+          <li>
+            <span class="tag-post-date">[{{ post.data.date | formatDateNumeric }}]</span>
+            <a class="tag-post-link" href={{ post.url }}>{{ post.data.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
+
