@@ -156,28 +156,30 @@
       }
     }
   }
-  .tag {
-    font-size: 1em;
-    margin: 0;
-    margin-bottom: 4px;
-    &-post {
-      &-list {
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
-        margin-bottom: 1em;
-      }
-      &-date {
-        color: $accent;
-      }
-      &-link {
-        text-decoration: none;
-        &:link,
-        &:visited {
-          color: $primary;
+  .list {
+    &-header {
+      font-size: 1em;
+      margin: 0;
+      margin-bottom: 4px;
+    }
+    &-posts {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      margin-bottom: 1em;
+      &-item {
+        &-date {
+          color: $accent;
         }
-        &:hover {
-          text-decoration: underline;
+        &-title {
+          text-decoration: none;
+          &:link,
+          &:visited {
+            color: $primary;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

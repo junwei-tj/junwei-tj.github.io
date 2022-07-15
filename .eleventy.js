@@ -26,6 +26,18 @@ module.exports = function (eleventyConfig) {
     tags.sort();
     return tags;
   });
+  eleventyConfig.addCollection("blogYears", (collections) => {
+    const yearsSet = new Set();
+    const posts = collections.getFilteredByGlob("./src/blog/*.md");
+    posts.map((post) => {
+      if (post.date) {
+        yearsSet.add(post.date.getFullYear());
+      }
+    });
+    const years = Array.from(yearsSet);
+    years.sort().reverse();
+    return years;
+  });
 
   eleventyConfig.addFilter("formatDate", (dateObj) => {
     const options = { month: "short", day: "numeric", year: "numeric" };
@@ -44,6 +56,9 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addFilter("hasTag", (tags, tagToFind) => {
     return tags && tags.includes(tagToFind);
+  });
+  eleventyConfig.addFilter("isWithinYear", (date, year) => {
+    return date.getFullYear() === year;
   });
 
   eleventyConfig.addPassthroughCopy("./src/assets");
