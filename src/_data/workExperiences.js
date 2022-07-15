@@ -11,7 +11,7 @@ module.exports = [
     ],
   },
   {
-    company: "Shopee",
+    company: "Singapore Pools Private Limited",
     logo: "/assets/sppl.svg",
     logoAlt: "Logo of Singapore Pools Private Limited",
     period: "May '21 - Jul '21",
