@@ -39,51 +39,6 @@ layout: page
   </section>
   <section>
     <h1>Experience</h1>
-    <section class="work">
-      <img class="work-logo" src="/assets/shopee.svg" alt="Shopee logo" />
-      <div class="work-details">
-        <div class="work-header">
-          <h2 class="work-company">Shopee</h2>
-          <span>May '22 - Aug '22</span>
-        </div>
-        <h3 class="work-title">Intern, Frontend Web Developer</h3>
-        <ul class="work-description">
-          <li>
-            Handled the development of new features and fixing of bugs for
-            Seller Center using <strong>Vue.js</strong>.
-          </li>
-          <li>
-            Implemented a new static site project using
-            <strong>React.js</strong> and with custom
-            <strong>Webpack 5</strong> configurations.
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="work">
-      <img
-        class="work-logo"
-        src="/assets/sppl.svg"
-        alt="Singapore Pools Private Limited logo"
-      />
-      <div class="work-details">
-        <div class="work-header">
-          <h2 class="work-company">Singapore Pools Private Limited</h2>
-          <span>May '21 - Jul '21</span>
-        </div>
-        <h3 class="work-title">Intern, Testing and Automation</h3>
-        <ul class="work-description">
-          <li>
-            Automated more than 50 manual test cases for both Android and iOS
-            versions of the Singapore Pools app using
-            <strong>Selenium</strong> and <strong>Appium</strong>.
-          </li>
-          <li>
-            Performed multiple regression testings and investigated when test
-            cases failed.
-          </li>
-        </ul>
-      </div>
-    </section>
+    {% include "./_includes/components/work-experiences.njk" %}
   </section>
 </main>
