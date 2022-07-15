@@ -1,7 +1,7 @@
 {% set previousPost = collections.blogPosts | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.blogPosts | getNextCollectionItem(page) %}
 
-<nav class="posts-nav">
+<nav class="posts-nav" aria-label="Posts navigation">
   {% if previousPost %}
     <div class="posts-nav-item previous">
       <span class="posts-nav-item-header">Previous</span>

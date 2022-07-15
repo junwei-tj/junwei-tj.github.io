@@ -1,7 +1,28 @@
 <div class="blog-nav-container">
-  <nav class="blog-nav">
-    <a href="/blog/" class="{{ 'active' if page.url == '/blog/' }}">Posts</a>
-    <a href="/blog/tags/" class="{{ 'active' if page.url == '/blog/tags/' }}">Tags</a>
-    <a href="/blog/archives/" class="{{ 'active' if page.url == '/blog/archives/' }}">Archives</a>
+  <nav class="blog-nav" aria-label="Blog sub-navigation">
+    <a 
+      href="/blog/" 
+      {% if page.url == '/blog/' %}
+        class="active"
+        aria-current="page"
+      {% endif %}>
+      Posts
+    </a>
+    <a 
+      href="/blog/tags/" 
+      {% if page.url == '/blog/tags/' %}
+        class="active"
+        aria-current="page"
+      {% endif %}>
+      Tags
+    </a>
+    <a 
+      href="/blog/archives/" 
+      {% if page.url == '/blog/archives/' %}
+        class="active"
+        aria-current="page"
+      {% endif %}>
+      Archives
+    </a>
   </nav>
 </div>
