@@ -2,6 +2,7 @@ module.exports = [
   {
     title: "STARS Panel",
     screenshot: "/assets/stars-panel.png",
+    screenshotAlt: "Screenshot of STARS Panel",
     description: `
       STARS Panel is a course registration planner for NTU students. 
       It aims to make timetable planning easy for students with features such as 

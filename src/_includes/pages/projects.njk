@@ -6,7 +6,7 @@ layout: page
   {% for project in projects %}
     <section class="project">
       <div class="project-image-container">
-        <img class="project-image" src="/assets/stars-panel.png" alt="STARS Panel screenshot" />
+        <img class="project-image" src="{{ project.screenshot }}" alt="{{ project.screenshotAlt }}" />
       </div>
       <div class="project-details">
         <h1>{{ project.title }}</h1>
