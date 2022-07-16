@@ -196,6 +196,8 @@
       margin: 0;
       margin-bottom: 1em;
       &-item {
+        display: flex;
+        gap: 4px;
         &-date {
           color: $accent;
         }

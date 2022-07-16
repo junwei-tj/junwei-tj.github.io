@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Article 1
+title: Article 1 Article 1 Article 1 Article 1 Article 1 Article 1 Article 1 Article 1 Article 1 Article 1 Article 1 Article 1 Article 1 Article 1
 date: 2022-06-10
 tags:
   - tag1
