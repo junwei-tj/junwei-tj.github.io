@@ -15,6 +15,9 @@ body {
   min-height: 100vh;
   max-width: 992px;
   margin: auto;
+  @include breakpoint-lg {
+    padding: 0 5%;
+  }
 }
 
 p,

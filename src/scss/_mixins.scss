@@ -1,3 +1,38 @@
 @mixin page-content {
   flex-grow: 1;
 }
+
+@mixin breakpoint-sm {
+  @media (max-width: 575.98px) {
+    // portrait phones
+    @content;
+  }
+}
+
+@mixin breakpoint-md {
+  @media (max-width: 767.98px) {
+    // landscape phones
+    @content;
+  }
+}
+
+@mixin breakpoint-lg {
+  @media (max-width: 991.98px) {
+    // tablets
+    @content;
+  }
+}
+
+@mixin breakpoint-xl {
+  @media (max-width: 1199.98px) {
+    // desktops
+    @content;
+  }
+}
+
+@mixin breakpoint-xxl {
+  @media (max-width: 1399.98px) {
+    // large desktops
+    @content;
+  }
+}
