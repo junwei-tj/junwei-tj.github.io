@@ -39,6 +39,13 @@ module.exports = function (eleventyConfig) {
     return years;
   });
 
+  eleventyConfig.addFilter("formatTitle", (title) => {
+    const defaultTitle = "Jun Wei's Abode";
+    if (title) {
+      return `${title} | ${defaultTitle}`;
+    }
+    return defaultTitle;
+  });
   eleventyConfig.addFilter("formatDate", (dateObj) => {
     const options = { month: "short", day: "numeric", year: "numeric" };
     return Intl.DateTimeFormat("en-SG", options).format(dateObj);
