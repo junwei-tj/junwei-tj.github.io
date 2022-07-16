@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="/public/style.css" />
     <link rel="stylesheet" href="/assets/prism-vsc-dark-plus.css" />
     <title>Minimalist Personal Site</title>
+    <script src="prism.js" defer></script>
   </head>
   <body>
     {% include "../components/nav.njk" %}
     {{ content | safe }}
     {% include "../components/footer.njk" %}
-    <script src="prism.js"></script>
   </body>
 </html>
