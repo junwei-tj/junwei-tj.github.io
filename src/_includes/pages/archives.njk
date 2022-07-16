@@ -11,7 +11,7 @@ layout: blog
         {% if withinYear %}
           <li>
             <span class="list-posts-item-date">[{{ post.data.date | formatDateNumeric }}]</span>
-            <a class="list-posts-item-title" href={{ post.url }}>{{ post.data.title }}</a>
+            <a class="list-posts-item-title" href="{{ post.url }}">{{ post.data.title }}</a>
           </li>
         {% endif %}
       {% endfor %}
