@@ -6,8 +6,12 @@ module.exports = [
     period: "May '22 - Aug '22",
     title: "Software Engineer Intern",
     description: [
-      "Handled the development of new features and fixing of bugs for Seller Center using <strong>Vue.js</strong>.",
-      "Implemented a new static site project using <strong>React.js</strong> and with custom <strong>Webpack 5</strong> configurations.",
+      "Handled the development of new business features for Shopee Seller Center using <strong>Vue.js</strong>.",
+      `
+        Led the development of a new project to create static pages using <strong>React.js</strong> and <strong>Webpack 5</strong>. 
+        As the first static page on this project, I implemented a pricing calculator from scratch to help sellers better understand 
+        the profitability of their listed items.
+      `,
     ],
   },
   {
