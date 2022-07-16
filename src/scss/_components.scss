@@ -101,6 +101,64 @@
   }
 }
 
+.work {
+  display: flex;
+  margin-bottom: 2em;
+  @include breakpoint-sm {
+    display: none;
+  }
+  .work-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    .work-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.25em;
+      @include breakpoint-sm {
+        flex-direction: column;
+        gap: 0.25em;
+      }
+    }
+  }
+  &-logo {
+    height: auto;
+    width: 3em;
+    margin-right: 1.5em;
+    margin-top: 4px;
+  }
+  &-company {
+    font-size: 1em;
+    margin: 0;
+  }
+  &-title {
+    color: $accent;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+  }
+  &-description {
+    padding-left: 1em;
+  }
+  &-sm {
+    display: none;
+    @include breakpoint-sm {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2em;
+      .work-details {
+        display: flex;
+        .work-header {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          gap: 4px;
+        }
+      }
+    }
+  }
+}
+
 .blog-nav-container {
   display: flex;
   .blog-nav {

@@ -30,8 +30,8 @@
 
 .about {
   @include page-content;
-  section:not(section:last-child) {
-    margin-bottom: 2em;
+  & > section:not(section:last-child) {
+    margin-bottom: 3em;
   }
   .accent {
     color: $accent;
@@ -50,38 +50,6 @@
       &:hover {
         text-decoration: underline;
         cursor: pointer;
-      }
-    }
-  }
-  .work {
-    display: flex;
-    .work-logo {
-      height: auto;
-      width: 3em;
-      margin-right: 1.5em;
-      margin-top: 4px;
-    }
-    .work-details {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      .work-header {
-        display: flex;
-        justify-content: space-between;
-      }
-      .work-company {
-        font-size: 1em;
-        margin: 0;
-      }
-      .work-title {
-        color: $accent;
-        font-size: 1em;
-        font-weight: 400;
-        margin: 0;
-        margin-top: 0.25em;
-      }
-      .work-description {
-        padding-left: 1em;
       }
     }
   }

@@ -18,4 +18,22 @@
     </ul>
   </div>
 </section>
+
+<section class="work-sm">
+  <div class="work-details">
+    <img class="work-logo" src={{ work.logo }} alt={{ work.logoAlt }} />
+    <div class="work-header">
+      <h2 class="work-company">{{ work.company }}</h2>
+      <span>{{ work.period }}</span>
+      <h3 class="work-title">{{ work.title }}</h3>
+    </div>
+  </div>
+  <ul class="work-description">
+    {% for line in work.description %}
+      <li>
+        {{ line }}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
 {% endfor %}
