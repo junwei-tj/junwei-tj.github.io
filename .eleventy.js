@@ -39,10 +39,9 @@ module.exports = function (eleventyConfig) {
     return years;
   });
 
-  eleventyConfig.addFilter("formatTitle", (title) => {
-    const defaultTitle = "Jun Wei's Abode";
-    if (title) {
-      return `${title} | ${defaultTitle}`;
+  eleventyConfig.addFilter("formatTitle", (pageTitle, defaultTitle) => {
+    if (pageTitle) {
+      return `${pageTitle} | ${defaultTitle}`;
     }
     return defaultTitle;
   });
