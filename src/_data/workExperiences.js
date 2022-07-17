@@ -6,6 +6,7 @@ module.exports = [
     period: "May '22 - Aug '22",
     title: "Software Engineer Intern",
     description: [
+      "Part of the Web Frontend Team",
       "Handled the development of new business features for Shopee Seller Center using <strong>Vue.js</strong>.",
       `
         Led the development of a new project to create static pages using <strong>React.js</strong> and <strong>Webpack 5</strong>. 
