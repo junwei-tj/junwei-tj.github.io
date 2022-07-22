@@ -47,9 +47,14 @@
       .social-logo {
         margin-right: 0.5em;
       }
-      &:hover {
-        text-decoration: underline;
-        cursor: pointer;
+      a {
+        display: flex;
+        align-items: center;
+        &:link,
+        &:visited {
+          color: $accent;
+          text-decoration: none;
+        }
       }
     }
   }
