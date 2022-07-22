@@ -50,7 +50,7 @@ module.exports = function (eleventyConfig) {
     return Intl.DateTimeFormat("en-SG", options).format(dateObj);
   });
   eleventyConfig.addFilter("formatDateNumeric", (dateObj) => {
-    const options = { month: "numeric", day: "numeric", year: "numeric" };
+    const options = { month: "2-digit", day: "2-digit", year: "numeric" };
     return Intl.DateTimeFormat("en-SG", options)
       .format(dateObj)
       .replace(/\//g, "-");
