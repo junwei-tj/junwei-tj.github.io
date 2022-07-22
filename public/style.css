@@ -81,9 +81,13 @@ li {
 .about .socials .social .social-logo {
   margin-right: 0.5em;
 }
-.about .socials .social:hover {
-  text-decoration: underline;
-  cursor: pointer;
+.about .socials .social a {
+  display: flex;
+  align-items: center;
+}
+.about .socials .social a:link, .about .socials .social a:visited {
+  color: #007fff;
+  text-decoration: none;
 }
 
 .projects {
