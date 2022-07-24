@@ -15,7 +15,7 @@ title: Blog
     <p>{{ post.data.page.excerpt }}</p>
     {% if post.data.tags %}
       <div class="post-tags">
-        {% for tag in (post.data.tags | getTags) %}
+        {% for tag in (post.data.tags | sortTags) %}
           <a href="/blog/tags/{{ tag }}" class="post-tag">{{ tag }}</a>
         {% endfor %}
       </div>

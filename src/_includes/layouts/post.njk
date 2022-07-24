@@ -13,7 +13,7 @@ layout: blog
   <p>{{ content | safe }}</p>
   {% if tags %}
     <div class="post-tags">
-      {% for tag in (tags | getTags) %}
+      {% for tag in (tags | sortTags) %}
         <a href="/blog/tags/{{ tag }}" class="post-tag">{{ tag }}</a>
       {% endfor %}
     </div>
