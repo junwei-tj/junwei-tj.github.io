@@ -415,10 +415,12 @@ li {
   justify-content: space-between;
   margin-top: 64px;
   font-weight: 700;
+  width: 100%;
 }
 .posts-nav-item {
   display: flex;
   flex-direction: column;
+  width: 45%;
 }
 .posts-nav-item a:link, .posts-nav-item a:visited {
   color: #353839;
