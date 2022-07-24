@@ -158,9 +158,11 @@
   justify-content: space-between;
   margin-top: 64px;
   font-weight: 700;
+  width: 100%;
   &-item {
     display: flex;
     flex-direction: column;
+    width: 45%;
     a {
       &:link,
       &:visited {
