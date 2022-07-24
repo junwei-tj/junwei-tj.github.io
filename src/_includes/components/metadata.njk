@@ -1,18 +1,14 @@
-{% set defaultTitle = "Jun Wei Toh" %}
-{% set author = "Jun Wei Toh" %}
-{% set defaultDescription = "
-  Personal website and blog of Jun Wei Toh, a graduating Computer Science student from Nanyang Technology University. 
-  Jun Wei has a keen interest in frontend web development, and he enjoys the occasional writing in his free time.
-" %}
-{% set keywords = "frontend, web, development, " %}
+{% set pageTitle = title | formatTitle(metadata.title) %}
+{% set pageDescription = description or metadata.description %}
 
-<title>{{ title | formatTitle(defaultTitle) }}</title>
-<meta name="author" content="{{ author }}">
-<meta name="description" content="{{ description or defaultDescription }}">
+<title>{{ pageTitle }}</title>
+<meta name="author" content="{{ metadata.author }}">
+<meta name="description" content="{{ pageDescription }}">
+<meta name="keywords" content="{{ metadata.keywords }}">
 
-<meta property="og:title" content="{{ title | formatTitle(defaultTitle) }}"/>
+<meta property="og:title" content="{{ pageTitle }}"/>
 <meta property="og:url" content="{{ page.url }}" />
-<meta property="og:description" content="{{ description or defaultDescription }}" />
+<meta property="og:description" content="{{ pageDescription }}" />
 
 <link rel="canonical" href="{{ page.url }}">
 

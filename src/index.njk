@@ -1,0 +1,10 @@
+---
+layout: page
+---
+
+<main class="home">
+  <h1 class="hello">Hello!</h1>
+  {% for line in home %}
+  <p>{{ line | safe }}</p>
+  {% endfor %}
+</main>

@@ -1,0 +1,32 @@
+---
+layout: page
+title: About
+---
+
+<main class="about">
+  <section>
+    <h1>About Myself</h1>
+    {% for line in about.description %}
+      <p>{{ line | safe }}</p>
+    {% endfor %}
+    <p>You may find me on:</p>
+    <ul class="socials">
+      {% for social in about.socials %}
+        <li class="social">
+          <a href="{{ social.link }}" target="_blank">
+            <img
+              class="social-logo"
+              src="{{ social.logo }}"
+              alt="{{ social.logoAlt }}"
+            />
+            <span>{{ social.name }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section>
+    <h1>Experience</h1>
+    {% include "./_includes/components/work-experiences.njk" %}
+  </section>
+</main>
