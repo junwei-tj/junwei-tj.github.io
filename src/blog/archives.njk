@@ -1,14 +1,15 @@
 ---
 layout: blog
+title: Archives
 ---
 
-{% for tag in collections.blogTags %}
+{% for year in collections.blogYears %}
   <section>
-    <h2 class="list-header">{{ tag }}</h2>
+    <h2 class="list-header">{{ year }}</h2>
     <ul class="list-posts">
       {% for post in collections.blogPosts %}
-        {% set tagExists = post.data.tags | hasTag(tag) %}
-        {% if tagExists %}
+        {% set withinYear = post.date | isWithinYear(year) %}
+        {% if withinYear %}
           <li class="list-posts-item">
             <span class="list-posts-item-date">[{{ post.data.date | formatDateNumeric }}]</span>
             <a class="list-posts-item-title" href="{{ post.url }}">{{ post.data.title }}</a>
