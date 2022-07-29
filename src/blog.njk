@@ -12,7 +12,7 @@ title: Blog
       <img src="/assets/clock.svg" alt="Clock icon" />
       <span class="post-details-text">{{ post | readingTime }} read</span>
     </div>
-    <p>{{ post.data.page.excerpt }}</p>
+    <p>{{ post.data.page.excerpt | mdToHtml | safe }}</p>
     {% if post.data.tags %}
       <div class="post-tags">
         {% for tag in (post.data.tags | sortTags) %}

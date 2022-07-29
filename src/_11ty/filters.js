@@ -1,3 +1,8 @@
+const md = require("markdown-it")();
+const mdToHtml = (content) => {
+  return md.render(content);
+};
+
 const formatTitle = (pageTitle, defaultTitle) => {
   if (pageTitle) {
     return `${pageTitle} | ${defaultTitle}`;
@@ -32,6 +37,7 @@ const isWithinYear = (date, year) => {
 };
 
 module.exports = {
+  mdToHtml,
   formatTitle,
   formatDate,
   formatDateNumeric,

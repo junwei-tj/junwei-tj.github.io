@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("blogTags", collections.getBlogTags);
   eleventyConfig.addCollection("blogYears", collections.getBlogYears);
 
+  eleventyConfig.addFilter("mdToHtml", filters.mdToHtml);
   eleventyConfig.addFilter("formatTitle", filters.formatTitle);
   eleventyConfig.addFilter("formatDate", filters.formatDate);
   eleventyConfig.addFilter("formatDateNumeric", filters.formatDateNumeric);

@@ -126,6 +126,16 @@
     width: 100%;
     height: auto;
   }
+  p > a {
+    text-decoration: none;
+    &:link,
+    &:visited {
+      color: $accent;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   .post {
     &-preview {
       display: flex;
