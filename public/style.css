@@ -162,6 +162,15 @@ li {
   width: 100%;
   height: auto;
 }
+.blog p > a {
+  text-decoration: none;
+}
+.blog p > a:link, .blog p > a:visited {
+  color: #007fff;
+}
+.blog p > a:hover {
+  text-decoration: underline;
+}
 .blog .post-preview {
   display: flex;
   flex-direction: column;
